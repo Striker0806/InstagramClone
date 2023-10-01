@@ -7,7 +7,6 @@ import {
 } from 'react-native';
 import React from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {useSelector} from 'react-redux';
 
 // Local import
 import images from '../AAssets/images';
@@ -23,14 +22,11 @@ export default function ReelComponent({
   reelUrl = '',
   style,
 }) {
-  const colors = useSelector(state => state.theme.theme);
+
   const navigation = useNavigation();
 
   const onPressReel = () => navigation.navigate(StackNav.ReelsComponent);
 
- 
-  /******************************************************reelUrl*********************************************** */
- 
 
   return (
     <TouchableOpacity
