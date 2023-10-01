@@ -7,7 +7,7 @@ let iPhoneX = screenHeight === 812 ? true : false;
 export const STATUSBAR_HEIGHT =
   Platform.OS === 'ios' ? (iPhoneX ? 44 : 22) : StatusBar.currentHeight;
 export const screenHeight = Dimensions.get('window').height - STATUSBAR_HEIGHT;
-export const screenWidth = Dimensions.get('window').width;
+export const screenWidth =  Dimensions.get('window').width;
 export const screenFullHeight = Dimensions.get('window').height;
 export const isAndroid = Platform.OS === 'ios' ? false : true;
 
