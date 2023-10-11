@@ -1,6 +1,6 @@
 // Library import
 import {
-  Image,
+  Image,a
   ScrollView,
   StyleSheet,
   TouchableOpacity,
