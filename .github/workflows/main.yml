@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd android
+          cd Instagram/android
           ./gradlew clean
           cd ..
           yarn install
@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Release APK
         run: |
-          cd android
+          cd Instagram/android
           ./gradlew assembleRelease
 
       - name: Upload APK
